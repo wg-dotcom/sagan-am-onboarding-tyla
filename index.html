@@ -219,6 +219,42 @@
       margin-left: auto;
     }
 
+    /* ── AVATAR ── */
+    .avatar {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-family: var(--display);
+      font-weight: 600;
+      background: var(--teal);
+      color: var(--cream);
+      border: 1.5px solid var(--gold-bright);
+      text-transform: uppercase;
+      overflow: hidden;
+      flex-shrink: 0;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
+    }
+    .avatar-lg { width: 56px; height: 56px; font-size: 22px; margin-bottom: 14px; }
+    .avatar-md { width: 44px; height: 44px; font-size: 17px; margin-bottom: 12px; }
+    .avatar-sm { width: 28px; height: 28px; font-size: 12px; }
+
+    .byline-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 6px;
+    }
+    .byline-row:last-child { margin-bottom: 0; }
+
     p { margin-bottom: 14px; }
     p.intro { font-size: 17px; line-height: 1.55; color: var(--ink-soft); max-width: 820px; }
     p strong { color: var(--ink); font-weight: 600; }
@@ -770,7 +806,10 @@
         <div class="anchor-quote">
           We're not hiring you to be an Account Manager for the next three years. We're hiring you to become an <em>Account Partner</em> inside twelve months.
         </div>
-        <div class="anchor-byline">Jesus, Head of Revenue<br/>Anna, Head of Operations &amp; Account Management</div>
+        <div class="anchor-byline">
+          <div class="byline-row"><div class="avatar avatar-sm">J</div><span>Jesus, Head of Revenue</span></div>
+          <div class="byline-row"><div class="avatar avatar-sm">A</div><span>Anna, Head of Operations &amp; Account Management</span></div>
+        </div>
       </div>
     </section>
 
@@ -783,11 +822,13 @@
       </div>
       <div class="buddies">
         <div class="buddy-card">
+          <div class="avatar avatar-lg">A</div>
           <div class="role">Head of Operations &amp; Account Management</div>
           <div class="name">Anna</div>
           <p class="desc">Anna is the smartest person in the room when it comes to Sagan. Every process, every system, every member, every edge case lives in her head. If you ever wonder how something actually works here, the answer is with her. She's run this ramp before, she knows what tripped people up at month two, and she'll save you weeks of figuring things out the hard way.</p>
         </div>
         <div class="buddy-card">
+          <div class="avatar avatar-lg">J</div>
           <div class="role">Head of Revenue</div>
           <div class="name">Jesus</div>
           <p class="desc">I'm here for the sales-shaped and strategic questions tied to specific members. How to read a customer, how to nurture a relationship, when to push and when to wait, how to position pricing, how to handle a hard conversation, how to grow into the next role on this team. Once you've been here a few weeks, we'll do a weekly 30-minute 1:1 just for you and me.</p>
@@ -982,16 +1023,19 @@
       </div>
       <div class="team">
         <div class="team-card">
+          <div class="avatar avatar-md">S</div>
           <div class="who">Sof + Recruiting team</div>
           <div class="role-line">Led by Sof · 10 Talent Advisors</div>
           <div class="why">Sof leads recruiting. Her team of 10 Talent Advisors runs sourcing, screening, and shortlist building. Your job is to translate the member's need into their language.</div>
         </div>
         <div class="team-card">
+          <div class="avatar avatar-md">K</div>
           <div class="who">Khris</div>
           <div class="role-line">Staff Accountant</div>
           <div class="why">Loop him in on invoicing and payment chases.</div>
         </div>
         <div class="team-card">
+          <div class="avatar avatar-md">A</div>
           <div class="who">AI Agents</div>
           <div class="role-line">Routed through Anna</div>
           <div class="why">When a member wants to scope an AI agent, Anna is your entry point. She'll bring in the right technical conversation from there.</div>
